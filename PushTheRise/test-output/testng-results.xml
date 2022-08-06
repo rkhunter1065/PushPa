@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-06T20:10:49 IST" name="Suite" finished-at="2022-08-06T20:12:56 IST" duration-ms="126733">
+    <groups>
+    </groups>
+    <test started-at="2022-08-06T20:10:49 IST" name="Test" finished-at="2022-08-06T20:12:56 IST" duration-ms="126733">
+      <class name="TestVagrant.ValidationPage">
+        <test-method is-config="true" signature="intialize()[pri:0, instance:TestVagrant.ValidationPage@e15b7e8]" started-at="2022-08-06T20:10:49 IST" name="intialize" finished-at="2022-08-06T20:10:56 IST" duration-ms="6788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method signature="extractReleaseDateAndCountryName()[pri:0, instance:TestVagrant.ValidationPage@e15b7e8]" started-at="2022-08-06T20:10:56 IST" name="extractReleaseDateAndCountryName" finished-at="2022-08-06T20:12:56 IST" duration-ms="119716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extractReleaseDateAndCountryName -->
+        <test-method signature="verifyReleaseAndCountryFromWikiAndImdbPage()[pri:0, instance:TestVagrant.ValidationPage@e15b7e8]" started-at="2022-08-06T20:12:56 IST" name="verifyReleaseAndCountryFromWikiAndImdbPage" finished-at="2022-08-06T20:12:56 IST" duration-ms="15" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [January 7, 2022 (United States)] but found [17 December 2021]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [January 7, 2022 (United States)] but found [17 December 2021]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at TestVagrant.ValidationPage.verifyReleaseAndCountryFromWikiAndImdbPage(ValidationPage.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReleaseAndCountryFromWikiAndImdbPage -->
+        <test-method is-config="true" signature="closedriver()[pri:0, instance:TestVagrant.ValidationPage@e15b7e8]" started-at="2022-08-06T20:12:56 IST" name="closedriver" finished-at="2022-08-06T20:12:56 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+      </class> <!-- TestVagrant.ValidationPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
